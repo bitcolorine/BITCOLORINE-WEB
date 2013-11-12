@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    Include.scss
+\*------------------------------------*/
+
+/**
+ * Generic helper classes and project mixins.
+**/
+
+   @import "generic/mixins"; 
+   @import "generic/helper";
+  
+/**
+ * Includes all the various parts
+**/
+
+   @import "parts/global";
+   @import "parts/header";
+   @import "parts/navigation";
+ 
+   @import "parts/pagination";
+   @import "parts/breadcrumb";
+   @import "parts/images";
+   @import "parts/media";   
+   @import "parts/buttons";
+   @import "parts/lists";
+   @import "parts/forms";   
+   @import "parts/links";
+   @import "parts/tables";
+
+   @import "generic/selectors";
+
+
+

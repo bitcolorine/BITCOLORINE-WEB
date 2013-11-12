@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+<head>
+
+<!--
+===============================================
+Meta_Basic
+===============================================
+-->
+    <meta charset="UTF-8" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Responsive not resizable
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	-->
+<!--
+===============================================
+Meta_Page_Info
+===============================================
+-->
+    <title>Bitcolorine :: Eclectic web services</title>
+	<meta name="Bitcolorine" content="Maker of simple, easy to maintain websites" >
+	<meta name="Simple, easy, websites, maintainable, " content="WordPress, Perch, CMS" >
+
+<!--
+===============================================
+CSS
+===============================================
+-->
+
+<!-- Bootstrap CSS -->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<!-- Own CSS -->
+
+	<link rel="stylesheet" type="text/css" href="assets/css/own/style.css">
+
+<!--
+===============================================
+Script/js
+===============================================
+-->
+	
+	
+	<script src="assets/js/boilerplate/vendor/modernizr-2.6.2.min.js"></script>
+
+
+<!--
+===============================================
+Favicon
+===============================================
+-->
+
+	<link rel="shortcut icon" href="assets/own/img/favicon/" />
+	<link rel="apple-touch-icon" href="assets/own/img/favicon/">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/own/img/favicon/">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/own/img/favicon/">
+
+
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="row">
+		
+		<div class="col-md-3">
+			<h1>Bitcolorine</h1>
+			<h2>Eclectic web services</h2>
+		</div>
+
+		<div class="col-md-9">
+			
+			<p></p>
+<ul class="nav nav-pills">
+    <li><a href="#">Home</a></li>
+    <li class='current'><a class='current'  href="about.html">About</a></li>
+    <li>
+      <a href="services.html">How I can help</a></li>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="its.html">Information Technology Skills</a></li>
+        <li><a href="work.html">View my work</a></li>	 
+      </ul>
+</ul>
+
+
+		</div>
+	</header>
+
+	<section class="row">
+	
+	<article class="col-md-8">
+	<h1>About Luisa</h1>
+
+
+		<p><p>
+					I've been making websites since 1997? Probably.
+					I learned with a book and a very slow computer. The first thing I put online was my very own 'Homepage' with poems by Anne Sexton and Sylvia Plath, plus quotes from the tortured souls of the 90's grunge bands. Very dramatic stuff.
+				</p>
+		
+				<p>
+					In 1999 I opened my first blog on Blogger. Back then you had the chance to publish your blog to your own server while still using the Blogger app. 
+					I had much fun desigining and re-desigining my blog sometimes five times in a year. 
+				</p>
+		
+		<p>In 2006 I moved to Montreal with the man of my life and I started searching for a new career. I wanted to do something different: I considered teaching, becoming a librarian, a dog groomer a breadmaker, anything but working in a large corporation. Finally I started to work at a bookstore and in a matter of weeks I became the web manager and a short time afterward the ecommerce manager.
+		</p>
+		<p>In 2013 my husband and I started preparing for a sabbatical in 2014. I would lose my job and in a moment of panic I realized that all my experience and my skills lie in web devopment. </p>
+		
+		Though I love the internet I have a more careful approach. I belive three things:
+		1. You have the own your content.
+		2. You are responsible for your privacy especially today.
+		3. The holograms of internet bliss are just holograms. The real work is done offline. When the power is out none of this exists. (reference).
+		
+		With this in mind, I prefer to work with:
+		Open source or Bootsrapped businesses.
+		Are you curious why? Read here.
+		
+		When I'm not coding websites I read and write. And I'm a compulsive learner. 
+		I publish two other blogs you can visit here and here. Sometimes I publish pieces in Spanish like this one.
+		I like to make bread.
+		
+		I'm a fan of the underground, the new, the unknown, the people who make things for the sake of it. Between a magazine and a zine I will always choose the zine. I collect books by female British authors for their elegance and economy of language, sense of humour and because I love that in every single one of those books there is the inevitable scene of tea and scones.
+		
+		By the way, if you must know, the best scones in Montreal are found at Rustique.</p>
+
+	</article>
+
+		<aside class="col-md-4">
+			
+		<img src="img/luisa.jpg"  class="img-responsive img-circle"/>
+
+
+		</aside>
+
+	</section>	
+		
+
+
+<!--
+===============================================
+Footer
+===============================================
+-->
+	<div class="row">
+			<div class="col-md-4">
+				<h3>Contact me</h3>
+				<ul>
+					<li>
+						<a href="http://www.twitter.com/automedusa">Twitter</a>	
+
+					</li>
+					<li><a href="https://plus.google.com/u/0/+LuisaFernandaNiño/">Google+</a></li>
+					<li> <a href="mailto:luisa@bitcolorine.com">Email</a></li>
+				</ul>
+			</div>	
+			
+			
+			<div class="col-md-4">
+
+				<div class="eclectic">
+					<h3>Eclecticism happens here</h3>
+
+				</div>
+
+				
+			</div>
+			<div class="col-md-4">
+				<h3>Join: Unfindable collectibles here</h3>
+				<p>Articles, tutorials, discoveries</p>
+				
+			</div>
+	</div>		
+
+	<div class="row">
+			
+			<div class="col-md-6">
+				<p class="small-footer"> Made stubbornly with: Bootstrap, Sublime Text and Perch</p>
+			</div>
+			<div class="col-md-6">
+				<p class="glyphicon glyphicon-copyright-mark small-footer"> Copyright 2013</p>
+			</div>
+
+	</div>
+
+
+
+
+
+<!--
+===============================================
+End Content
+===============================================
+-->
+
+<!--
+===============================================
+Bootstrap Script
+===============================================
+-->
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/jquery/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!--
+===============================================
+Google Analytics Script
+===============================================
+-->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+</div>
+</body>
+<html>
